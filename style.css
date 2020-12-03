@@ -27,7 +27,7 @@ main {
   position: relative;
 }
 
-.blog-box:nth-last-child {
+.blog-box:last-child {
   margin-right: 0;
 }
 
@@ -74,4 +74,46 @@ main {
 .gray {
   background-color: #aaaaaa;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .orange {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .blog {
+    width: 100%;
+    display: block;
+  }
+
+  .blog-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .blog-box:last-child {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .blog-img1 {
+    width: 100%;
+  }
+
+  .blog-img2 {
+    width: 100%;
+  }
+
+  .blog-img3 {
+    width: 100%;
+  }
+
+  .gray {
+    width: 100%;
+  }
 }
